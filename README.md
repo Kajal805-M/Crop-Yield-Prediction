@@ -1,60 +1,128 @@
-﻿# Crop Yield Prediction - Beginner Friendly
+# 🌾 Crop Yield Prediction using Machine Learning
 
-This project trains multiple machine learning models to predict **crop yield** using the dataset `crop yield.csv`.
+A machine learning-based web application that predicts **crop yield** based on agricultural and environmental factors such as crop type, state, season, rainfall, fertilizer usage, pesticide usage, temperature, area, and production.
 
-## What this project does
-- Loads data from CSV
-- Cleans and preprocesses data
-- Handles missing values
-- Encodes categorical columns (`Crop`, `Season`, `State`)
-- Scales numerical columns for Linear Regression
-- Trains 3 models:
-  - Linear Regression
-  - Random Forest Regressor
-  - Decision Tree Regressor
-- Evaluates using MAE, MSE, RMSE, R2
-- Selects best model and saves it with pickle
-- Provides a user input prediction function
+This project helps in understanding how different factors affect crop productivity and provides an intelligent prediction system for agriculture-related decision making.
 
-## Project files
-- `train_models.py`: full training + evaluation + model saving
-- `predict_yield.py`: load saved model and make prediction
-- `requirements.txt`: dependencies
+---
 
-## How to run
+## 🚀 Project Overview
 
-1. Install dependencies
+Crop yield prediction is an important problem in agriculture because it helps farmers, researchers, and policymakers estimate production in advance.  
+In this project, machine learning models are trained on historical crop data to predict the expected yield of a crop.
+
+The project includes:
+
+- Data preprocessing
+- Missing value handling
+- Outlier treatment
+- Feature engineering
+- Model training
+- Model evaluation
+- Streamlit web application
+- User-friendly crop yield prediction interface
+
+---
+
+## 🎯 Objective
+
+The main objective of this project is to build a machine learning model that can predict crop yield accurately using crop-related and climate-related features.
+
+---
+
+## 📌 Features
+
+- Predicts crop yield based on user input
+- Handles categorical and numerical data
+- Uses machine learning regression models
+- Includes feature engineering such as average temperature
+- Provides model evaluation using important metrics
+- Interactive Streamlit web app
+- Clean and simple user interface
+- Useful for agriculture analytics and decision support
+
+---
+
+## 🧠 Machine Learning Models Used
+
+The following regression models were tested:
+
+- Linear Regression
+- Random Forest Regressor
+- Gradient Boosting Regressor
+
+The best-performing model was selected based on evaluation metrics.
+
+---
+
+## 📊 Evaluation Metrics
+
+The model performance was evaluated using:
+
+- R² Score
+- Mean Absolute Error
+- Root Mean Squared Error
+- Mean Absolute Percentage Error
+
+---
+
+## 🛠️ Tech Stack
+
+| Category | Tools / Libraries |
+|---|---|
+| Programming Language | Python |
+| Data Handling | Pandas, NumPy |
+| Visualization | Matplotlib, Seaborn |
+| Machine Learning | Scikit-learn |
+| Web App | Streamlit |
+| Model Saving | Joblib / Pickle |
+| IDE | VS Code / Jupyter Notebook |
+
+---
+
+## 📂 Dataset Features
+
+The dataset contains agricultural and environmental features such as:
+
+| Feature | Description |
+|---|---|
+| Crop | Name of the crop |
+| State | State where crop is grown |
+| Season | Crop growing season |
+| Crop_Year | Year of cultivation |
+| Area | Cultivated area |
+| Production | Total crop production |
+| Annual_Rainfall | Yearly rainfall |
+| Fertilizer | Fertilizer used |
+| Pesticide | Pesticide used |
+| Max_Temperature | Maximum temperature |
+| Min_Temperature | Minimum temperature |
+| Avg_Temperature | Average temperature |
+| Yield | Target variable |
+
+---
+
+## 📁 Project Structure
+
 ```bash
-pip install -r requirements.txt
-```
-
-2. Train models
-```bash
-python train_models.py
-```
-
-3. Predict yield (interactive)
-```bash
-python predict_yield.py
-```
-
-## Input features used
-- Crop
-- Crop_Year
-- Season
-- State
-- Area
-- Production
-- Annual_Rainfall
-- Fertilizer
-- Pesticide
-- Avg_Temperature
-- Max_Temperature
-- Min_Temperature
-
-Target:
-- Yield
-
-## Output artifacts
-- `best_crop_yield_model.pkl`
-- `model_comparison.csv`
+Crop-Yield-Prediction/
+│
+├── data/
+│   └── Crop_Yield_Data.csv
+│
+├── notebooks/
+│   └── crop_yield_analysis.ipynb
+│
+├── models/
+│   └── best_model.pkl
+│
+├── images/
+│   ├── yield_distribution.png
+│   ├── rainfall_vs_yield.png
+│   ├── temperature_vs_yield.png
+│   └── feature_importance.png
+│
+├── app.py
+├── requirements.txt
+├── README.md
+└── model_metadata.json
