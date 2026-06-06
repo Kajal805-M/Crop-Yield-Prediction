@@ -126,3 +126,15 @@ Crop-Yield-Prediction/
 ├── requirements.txt
 ├── README.md
 └── model_metadata.json
+
+---
+
+## 👩‍💻 Author
+
+**Kajal** — [@Kajal805-M](https://github.com/Kajal805-M)
+
+---
+
+## 📄 License
+
+This project is open-source and available under the [MIT License](LICENSE).
