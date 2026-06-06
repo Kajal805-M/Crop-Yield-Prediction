@@ -129,13 +129,10 @@ Crop-Yield-Prediction/
 
 ---
 
-## 👩‍💻 Author
+👩‍💻 Author
 
 **Kajal** — [@Kajal805-M](https://github.com/Kajal805-M)
 
----
-
-## 📄 License
-![License](https://img.shields.io/badge/License-MIT-yellow)
+📄 License
 
 This project is open-source and available under the [MIT License](LICENSE).
