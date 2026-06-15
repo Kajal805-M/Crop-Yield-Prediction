@@ -49,9 +49,9 @@ The following regression models were tested:
 
 - Linear Regression
 - Random Forest Regressor
-- Gradient Boosting Regressor
+- Decision Tree
 
-The best-performing model was selected based on evaluation metrics.
+The best-performing model was Random Forest . It was selected based on evaluation metrics.
 
 ---
 
