@@ -19,7 +19,6 @@ The project includes:
 - Feature engineering
 - Model training
 - Model evaluation
-- Streamlit web application
 - User-friendly crop yield prediction interface
 
 ---
@@ -37,7 +36,6 @@ The main objective of this project is to build a machine learning model that can
 - Uses machine learning regression models
 - Includes feature engineering such as average temperature
 - Provides model evaluation using important metrics
-- Interactive Streamlit web app
 - Clean and simple user interface
 - Useful for agriculture analytics and decision support
 
@@ -74,7 +72,6 @@ The model performance was evaluated using:
 | Data Handling | Pandas, NumPy |
 | Visualization | Matplotlib, Seaborn |
 | Machine Learning | Scikit-learn |
-| Web App | Streamlit |
 | Model Saving | Joblib / Pickle |
 | IDE | VS Code / Jupyter Notebook |
 
@@ -108,21 +105,16 @@ The dataset contains agricultural and environmental features such as:
 Crop-Yield-Prediction/
 │
 ├── data/
-│   └── Crop_Yield_Data.csv
+│   └── Crop_Yield.csv
 │
 ├── notebooks/
-│   └── crop_yield_analysis.ipynb
-│
+│   └── predict_yeild.py
+│   └── train_model.py
 ├── models/
-│   └── best_model.pkl
+│   └── model_comparision.pkl
+│   
 │
-├── images/
-│   ├── yield_distribution.png
-│   ├── rainfall_vs_yield.png
-│   ├── temperature_vs_yield.png
-│   └── feature_importance.png
-│
-├── app.py
+├── 
 ├── requirements.txt
 ├── README.md
 └── model_metadata.json
